@@ -10,10 +10,13 @@ from selenium.webdriver.common.keys import Keys
 
 
 class InstagramMessages:
-    def __init__(self, username, password):
+    def __init__(self):
         # Recebendo os dados essenciais para entrar no instagram
-        self.username = username
-        self.password = password
+        self.username = input('\nUsername: ')
+        self.password = input('Password: ')
+        
+        # Mensagem que será enviada para os contatos
+        self.mensagem = 'Hello! How are you?'
         
         # Abrir o google chrome e entrar no instagram
         self.driver = webdriver.Chrome(ChromeDriverManager().install())
@@ -22,8 +25,8 @@ class InstagramMessages:
     def login(self):
         time.sleep(3)
         # Encontrar o campo de inserir o nome de usuário
-        path = '//input[@name="username"]'
-        username_block = self.driver.find_element_by_xpath(path)
+        xpath = '//input[@name="username"]'
+        username_block = self.driver.find_element_by_xpath(xpath)
         # Clicar no elemento
         username_block.click()
         time.sleep(1)
@@ -31,19 +34,20 @@ class InstagramMessages:
         username_block.send_keys(self.username)
 
         # Encontrar o campo de inserir a senha
-        path = '//input[@name="password"]'
-        password_block = self.driver.find_element_by_xpath(path)
+        xpath = '//input[@name="password"]'
+        password_block = self.driver.find_element_by_xpath(xpath)
         # Clicar no campo
         password_block.click()
         # Inserir a senha
         password_block.send_keys(self.password)
         
         # Encontrar o botão de fazer login
-        path = '//*[@id="loginForm"]'
-        login_button_block = self.driver.find_element_by_xpath(path)
+        xpath = '//*[@id="loginForm"]'
+        login_button_block = self.driver.find_element_by_xpath(xpath)
         # Clicar no botão
         login_button_block.click()
-        
+    
+    # Quando usar esse método, usar o @ da pessoa para quem quer enviar
     def seek_contact(self, contact_name):
         time.sleep(3)
         for contact in contact_name:
@@ -65,11 +69,12 @@ class InstagramMessages:
         # Clicar na caixa de texto
         message_block.click()
         # Inserir a mensagem na caixa
-        message_block.send_keys('Durma bem! Tchau!')
+        message_block.send_keys(self.mensagem)
         # Clicar ENTER para enviar
         message_block.send_keys(Keys.ENTER)
 
 
-instagram_messages = InstagramMessages('username', 'password')
+instagram_messages = InstagramMessages()
 instagram_messages.login()
+# Observação: podem ser colocados mais de uma pessoa e até mesmo apenas uma
 instagram_messages.seek_contact(['contact_1', 'contact_2'])
