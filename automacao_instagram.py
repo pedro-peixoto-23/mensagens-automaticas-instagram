@@ -47,7 +47,7 @@ class InstagramMessages:
         # Clicar no botão
         login_button_block.click()
     
-    # Quando usar esse método, usar o @ da pessoa para quem quer enviar
+    # Quando chamar esse método, usar o @ da pessoa para quem quer enviar
     def seek_contact(self, contact_name):
         time.sleep(3)
         for contact in contact_name:
