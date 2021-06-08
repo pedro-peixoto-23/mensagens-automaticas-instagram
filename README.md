@@ -1,22 +1,32 @@
-<h1>Mensagens Automáticas para o Instagram</h1>
+# Mensagens Automáticas para o Instagram
 
 
-<h2>Objetivos do projeto</h2>
+## Objetivos do projeto
 
-- Criar um bot para enviar mensagens para pessoas escolhidas através do instagram
-- Ser possível enviar uma mesma mensagem para vários contatos automaticamente
+- Criar um bot para enviar mensagens automáticas no instagram
+- Enviar uma determinada mensagem, de forma automática, para um ou vários contatos do instagram
 
-<h2>Como utilizar o programa</h2>
+<br>
 
-<strong>Bibliotecas necessárias:</strong>
-- Bibliotecas <strong>selenium</strong> e <strong>webdriver_manager</strong> instaladas no computador
+## Como utilizar o programa
+<strong>Bibliotecas externas necessárias:</strong>
+- <strong>selenium</strong> e <strong>webdriver_manager</strong>
 
 <strong>Passos para utilização:</strong>
-- Inserir o seu nome de usuário e senha no campo informado no código
-- Colocar nome de usuário dos seus contatos na área reservada para isso, para que as mensagens sejam enviadas para eles
+- Colocar o nome de usuário dos seus contatos, na área reservada para isso, para que as mensagens sejam enviadas para eles
 - Inserir a mensagem que será enviada para os contatos do instagram  
+- Inserir o seu nome de usuário e senha, para que o programa possa entrar na sua conta do instagram e faça a automação
 
+<br>
 
-<h2>Documentações</h2>
+## Instalação das bibliotecas
+
+### Windows
+- `pip install selenium`
+- `pip install webdriver_manager`
+
+<br>
+
+## Documentações
 
 - <strong>selenium:</strong> https://www.selenium.dev/documentation/pt-br/getting_started/
