@@ -1,12 +1,8 @@
-# Objetivo: criar um bot para enviar mensagens no instagram. O programa recebe o
-# seu usuário e senha e uma quantidade de contatos, após isso manda a mensagem 
-# antes definida para essa lista de contatos.
-
 # Importando as bibliotecas necessárias
 from selenium import webdriver
-import time
 from webdriver_manager.chrome import ChromeDriverManager
 from selenium.webdriver.common.keys import Keys
+import time
 
 
 class InstagramMessages:
