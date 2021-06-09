@@ -12,7 +12,7 @@ class InstagramMessages:
         self.password = input('Password: ')
         
         # Mensagem que será enviada para os contatos
-        self.mensagem = 'Hello! How are you?'
+        self.message = 'Hello! How are you?'
         
         # Abrir o google chrome e entrar no instagram
         self.driver = webdriver.Chrome(ChromeDriverManager().install())
