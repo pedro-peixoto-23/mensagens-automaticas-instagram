@@ -11,13 +11,6 @@
 <strong>Bibliotecas externas necessárias:</strong>
 - <strong>selenium</strong> e <strong>webdriver_manager</strong>
 
----
-<strong>Observação:</strong> <br> 
-quando estiver utilizando o projeto, haverá um momento, quando o programa estiver <br> 
-indo para o primeiro contato, em que aparecerá uma espécie de poupup do instagram, 
-<br> e você terá 10 segundos para retirar isso.
-
----
 
 ## Instalação das bibliotecas
 
