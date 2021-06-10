@@ -1,7 +1,6 @@
 # Mensagens Automáticas para o Instagram
 
 
-
 ## Objetivos do projeto
 
 - Criar um bot para enviar mensagens automáticas no instagram
@@ -12,11 +11,9 @@
 <strong>Bibliotecas externas necessárias:</strong>
 - <strong>selenium</strong> e <strong>webdriver_manager</strong>
 
-<strong>Passos para utilização:</strong>
-- Colocar o nome de usuário dos seus contatos, na área reservada para isso, para que as mensagens sejam enviadas para eles
-- Inserir a mensagem que será enviada para os contatos do instagram  
-- Inserir o seu nome de usuário e senha, para que o programa possa entrar na sua conta do instagram e faça a automação
-
+<strong>Observação:</strong> quando estiver utilizando o projeto, haverá um 
+momento, quando o programa estiver indo para o primeiro contato, em que aparecerá 
+uma espécie de poupup do instagram, e você terá 10 segundos para retirar isso.
 
 ## Instalação das bibliotecas
 
