@@ -3,7 +3,7 @@
 
 ## Objetivos do projeto
 
-- Criar um bot para enviar mensagens automáticas no instagram
+- Criar um programa para enviar mensagens automáticas no instagram
 - Enviar uma determinada mensagem, de forma automática, para um ou vários contatos do instagram
 
 
